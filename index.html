@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { position: fixed; bottom: 0; opacity: 0;}
+    .attribution a {color: rgb(134, 254, 214);}
+    .attribution:hover { opacity: 1; color: white;}
+  </style>
+</head>
+<body onload="getData()">
+  <div id="advice_card">
+    <h1 id="advice_title">Advice # <span id="advice_number">117</span></h1>
+    <p id="advice_text">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
+    <div class="separator">
+      <div class="hr"></div>
+      <div id="pause_icon">
+        <div class="pause_bar"></div>
+        <div class="pause_bar"></div>
+      </div> 
+      <div class="hr"></div>
+    </div>
+    <button onclick="getData()"><img src="./images/icon-dice.svg" alt="dice icon"></button>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="emiltoulouse.com">Emil Toulouse</a>.
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

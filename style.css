@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --light-cyan : hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --gray-blue : hsl(217, 19%, 38%);
+    --dark-gray-blue : hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: var(--dark-blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#advice_card{
+    position: relative;
+    width: 350px;
+    background-color: var(--dark-gray-blue);
+    padding: 2em;
+    text-align: center;
+    border-radius: 1em;
+}
+#advice_title{
+    color: var(--neon-green);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+#advice_text{
+    margin-top: 1em;
+    font-size: 23px;
+    color: var(--light-cyan);
+}
+.separator{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em ;
+}
+.separator .hr{
+    content: "";
+    width: 40%;
+    border-radius: 2px;
+    height: 2px;
+    background-color: var(--gray-blue);
+}
+#pause_icon{
+    display: flex;
+}
+.pause_bar{
+    content: "";
+    width: 6px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: var(--light-cyan);
+}
+.pause_bar:nth-child(1){
+    margin-right: 8px;
+}
+button{
+    background-color: var(--neon-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    padding: 1.5em;
+    border-radius: 50%;
+    position: absolute;
+    /*Not a magical number just (size - 2*padding)/2 for the center */
+    left: 143px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+button:hover,
+button:focus {
+    box-shadow: 0rem 0rem 1.5rem var(--neon-green);
+}
